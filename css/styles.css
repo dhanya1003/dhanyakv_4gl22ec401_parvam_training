@@ -1,0 +1,21 @@
+.parent{
+   border: 2px solid brown;
+   display:flex;
+   height: 500px;
+   /* justify-content handles the horizontal direction or x-plane */
+   justify-content: space-evenly;
+   /* align-items handles the vertical direction or y-axis */
+   align-items:center;
+   flex-direction: row;
+   flex-wrap:wrap;
+   align-content:center;
+   gap: 50px;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    border: 1px groove white;
+    color: white;
+    font-size: 30px;
+}

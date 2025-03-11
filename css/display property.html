@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @font-face {
+                font-family: DancingScript;
+                src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+            }
+            @font-face {
+                font-family:Montserrat;
+                src: url('..//fonts/Montserrat-VariableFont_wght.ttf');
+            }
+            .same-line{
+                display:inline;
+                letter-spacing: 2px;
+                line-height: 2.5;
+                font-family: DancingScript;
+                padding: 30px;
+            }
+            li{
+               display: inline;
+            }
+            a{
+                text-decoration: none;
+                padding: 10px;
+                font-size: 30px;
+                color: rgb(10, 10, 10);
+                background-color: aquamarine;
+                font-family: Montserrat;
+            }
+            ul{
+                text-align: left;
+            }
+            .links{
+                display: block;
+                color:blueviolet;
+                background-color:antiquewhite;
+            }
+            img{
+                width: 400px;
+                display: block;
+            }
+            h3{
+                display: inline-block;
+                padding: 30px;
+                border: 5px groove rgb(214, 247, 165);
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                border: 10px ridge rgb(223, 185, 185);
+                background-color: aqua;
+            }
+            .para span{
+                font-size: 30px;
+                display: none;
+            }
+            .another-para span{
+                visibility:hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="same-line">This is first heading.</h1>
+            <h1 class="same-line">This is second heading.</h1>
+            <p class="same-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, expedita et. Eos excepturi sapiente consequatur quae? Fuga maiores, voluptatem tenetur, vero sequi cum cumque rem earum expedita harum exercitationem veniam esse, accusamus aliquid dolorem corrupti perspiciatis necessitatibus iste molestias! Voluptates!</p>
+            <p class="same-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum iste beatae, nam qui quaerat quam? Temporibus illum architecto distinctio.</p>
+            <ul type="none">
+                <li>
+                   <a href="home.html">Home</a>
+                </li>
+                <li>
+                   <a href="about_us.html">About Us</a>
+                </li>
+                <li>
+                   <a href="services.html">Services</a>
+                </li>
+                <li>
+                   <a href="contact_us.html">Contact Us</a>
+                </li>
+            </ul>
+            <h1>Quick links</h1>
+            <a class="links" href="home.html">Home</a>
+            <a class="links" href="about_us.html">About Us</a>
+            <a class="links" href="services.html">Services</a>
+            <a class="links" href="contact_us">Contact Us</a>
+            <h2>sunrise</h2>
+            <img src="../media/sunrise.jpg.jpg" alt="sea image">
+            <h2>flowers</h2>
+            <img src="../media/heart-flower.jpg" alt="flower image">
+            <h3>This is a sub-heading 1</h3>
+            <h3>This is a sub-heading 2</h3><br><br>
+        <div class="box"></div>
+        <div class="box"></div>
+        <p class="para">We are learning <span>CSS</span>.</p>
+        <p class="another-para">We are learning <span>CSS along with </span>HTML.</p>
+        </div>
+    </body>
+</html>

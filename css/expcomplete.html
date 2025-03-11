@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @font-face {
+                font-family: DancingScript;
+                src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+            }
+            p{
+                color:rgb(224, 17, 17);
+                background-color:rgb(238, 227, 227);
+                padding: 15px;
+                line-height: 2.5;
+                text-align: justify;
+                word-spacing: 2px;
+                font-family: DancingScript;
+                font-size: 20px;
+            }
+            .heading{
+                background-image: linear-gradient(pink, rgb(184, 213, 240) );
+            }
+            .heading-1{
+                text-decoration: underline;
+            }
+            nav{
+                background-color:azure;
+                border: 5px ridge rgb(238, 176, 176);
+            }
+            .menu-bar{
+                display:flex;
+                list-style:none;
+                justify-content: space-between;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                color:blue;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .menu-items{
+                /* border: 1px solid black ; */
+                padding: 20px;
+                flex-grow: 1;
+            }
+            .logo{
+                flex-grow: 1;
+            }
+            a:hover{
+                color: rgb(232, 11, 29);
+                text-decoration: underline;
+                font-size: 25px;
+            }
+            table,th,tr,td {
+                border:2px solid black;
+                border-collapse:collapse;
+                line-height: 2.5;
+                text-align: center;
+            }
+            th{
+                color: black;
+                background-color: rgb(242, 236, 236);
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .parent{
+                border: 4px dashed brown;
+                display:flex;
+                height: 500px;
+                /* justify-content handles the horizontal direction or x-plane */
+                justify-content: space-around;
+                /* align-items handles the vertical direction or y-axis */
+                align-items:center;
+                flex-direction: row;
+                flex-wrap:wrap;
+                align-content:center;
+                gap: 50px;
+            }
+            .child{
+                width: 200px;
+                height: 200px;
+                background-color: darkmagenta;
+                border: 1px groove black;
+                color: white;
+                font-size: 30px;
+                text-align:center;
+            }
+            .para-one{
+                border: 5px ridge brown;
+                width:600px;
+                margin-left: 60px;
+                padding:50px;
+                font-size: 20px;
+                line-height: 2;
+                background-color: bisque;
+            }
+            .para-two{
+                color: blue;
+                background-color:lightskyblue;
+            }
+            .para-two:hover{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav> <!--It is a navbar -->
+                <ul class="menu-bar">
+                    <li class="menu-items logo">
+                       <img src="../media/GECK logo.jpg" alt="">
+                    </li>
+                    <li class="menu-items">
+                       <a href="#main-heading">Heading</a>
+                    </li>
+                    <li class="menu-items">
+                       <a href="#second-heading">Time-Table</a>
+                    </li>
+                    <li class="menu-items">
+                       <a href="#third-heading">Related Pics</a>
+                    </li>
+                    <li class="menu-items">
+                       <a href="#fourth-heading">Flexbox</a>
+                    </li>
+                    <li class="menu-items">
+                       <a href="#fifth-heading">Contact Us</a>
+                    </li>
+                </ul>
+            </nav><br><br>
+        </header>
+        <aside>
+            <p class="heading">This is a division for side portion of the website.</p>
+        </aside>
+        <main>
+            <section id="main-heading">
+               <h1 class="heading-1">GECK Kushalnagar</h1>
+               <p>This is engineering college situated in kushalnagar near by Nisargadhama</p>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente delectus ex, fugit placeat debitis sit eius quod! Magni iusto commodi animi illum perspiciatis incidunt blanditiis molestias eum rerum provident tempore explicabo repellat fugiat harum est odio quos voluptas amet asperiores numquam, saepe a veritatis impedit. Dolor esse corrupti iste, tempora dolores repellendus eius quidem ea at alias mollitia cum distinctio? Dicta tempora velit ipsam suscipit quo. At, laborum? Porro sed saepe corrupti quo quis nulla alias, doloremque rerum et numquam accusantium nostrum laborum ex repellendus aliquam fugit doloribus ab voluptas praesentium officia deleniti similique dolorum. Quaerat facere eos quis et?</p>
+            </section><br><br>
+            <section id="second-heading">
+            <table>
+                <h2 class="heading-1">Class Time-table</h2>
+                <!--Shift + Alt + Bottom Arrow -->
+                <!--Ctrl + Alt + Bottom arrow - Multi-line Cursor-->
+                <tr>
+                    <th>Day</th>
+                    <th>9.30-10.30</th>
+                    <th>10.30-11.30</th>
+                    <th>11.30-12.30</th>
+                    <th>12.30-1.30</th>
+                    <th rowspan="6">Lunch Break</th>
+                    <th>2.30-4.30</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>O&WC</td>
+                    <td>Ad-VLSI</td>
+                    <td>OE</td>
+                    <td>BSP</td>
+                    <td rowspan="5">Project Work</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>NS</td>
+                    <td>OE</td>
+                    <td>O&WC</td>
+                    <td rowspan="2">Ad-VLSI</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td rowspan="2">OE</td>
+                    <td>BSP</td>
+                    <td>NS</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>NS</td>
+                    <td>BSP</td>
+                    <td>O&WC</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td></td>
+                    <td colspan="3">Project Phase 1</td>
+                </tr>
+            </table>
+            </section><br><br>
+            <section id="third-heading">
+                <h1 class="heading-1">Media: Image,Video,Audio Files</h1>
+            <figure>
+                <h3>College Front View</h3>
+                <img src="../media/GECK.jpeg" alt="college_image" width="400px">
+                <h3>Coffee Plantation</h3>
+                <img src="../media/coorge.jpg" alt="coorge_image" width="400px">
+                <h3>Coorge Culture</h3>
+                <img src="../media/coorg  culture.jpg" alt="culture_image" width="400px">
+                <h3>Morning Vibe</h3>
+                <video src="../media/morning vibe vdo.mp4" controls autoplay muted loop width="500px"></video>
+                <audio src="../media/flute music.mp3" controls  autoplay muted loop></audio>
+            </figure>
+            </section><br><br>
+            <section id="fourth-heading">
+                <h2 class="heading-1">Flexbox</h2>
+                <div class="parent">
+                   <div class="child">1</div>
+                   <div class="child">2</div>
+                   <div class="child">3</div>
+                   <div class="child">4</div>
+                   <div class="child">5</div>
+                   <div class="child">6</div>
+                   <div class="child">7</div>
+                   <div class="child">8</div>
+                </div>
+            </section><br><br>
+            <section id="fifth-heading">
+                <h2 class="heading-1">Student Information</h2>
+            <form class="para-one"><br>
+                <label for="college name">College Name</label>
+                 <input type="text" name="college_name" id="college_name" value="GEC Kushalnagar"readonly><br><br>
+                <label for="student name">Student Name</label>
+                 <input type="text" name="student_name" id="student_name" placeholder="Enter your name"><br><br>
+                <label for="student usn">Student USN</label>
+                 <input type="text" name="student_usn" id="student_usn" value="4GL22EC401"disabled><br><br>
+                <label for="semister">Semister</label>
+                 <input type="text" name="semister" id="semister"><br><br>
+                <label for="branch">Branch:</label>
+                 <input type="radio" name="branch" id="ece">
+                <label for="ece">ECE</label>
+                 <input type="radio" name="branch" id="cse">
+                <label for="cse">CSE</label>
+                 <input type="radio" name="branch" id="cve">
+                <label for="cve">CVE</label>
+                 <input type="radio" name="branch" id="mech">
+                <label for="mech">MECH</label><br><br>
+                <label for="father name">Father Name</label>
+                 <input type="text" name="father_name" id="father_name"><br><br>
+                <label for="mother name">Mother Name</label>
+                 <input type="text" name="mother_name" id="mother_name"><br><br>
+                <label for="caste category">Caste Category:</label>
+                 <input type="checkbox" name="caste_category" id="obc">
+                <label for="obc">OBC</label>
+                 <input type="checkbox" name="caste_category" id="sc">
+                <label for="mother name">SC</label>
+                 <input type="checkbox" name="caste_category" id="general">
+                <label for="general">General</label><br><br>
+                <label for="admission date">Admission Date</label>
+                 <input type="date" name="admission_date" id="admission_date"><br><br>
+                <label for="passing month">Passing Month</label>
+                 <input type="month" name="passing_month" id="passing_month"><br><br>
+                <label for="upload_IDphoto">Upload IDphoto</label>
+                 <input type="file" name="upload_IDphoto" id="file" multiple accept="image/*"><br><br>
+                 <input class="para-two" type="submit">
+                 <input class="para-two" type="reset"><br><br>
+            </form>
+            </section>
+        </main>
+    </body>
+</html>
