@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number = 20;    //if -20 is represented its not positive number
+        // We can cheack for positive condition using if statements
+        if(number > 0){
+            console.log(`${number} is a positive number.`);
+        }
+
+        var second_number = -20; 
+        // We can check for both positive & negative condition using if else statements   
+        if(second_number > 0){
+            console.log(`${second_number} is a positive number.`);
+        }else{
+            console.log(`${second_number} is a negative number.`)
+        }
+
+        var checkEven = 18;
+        if(checkEven % 2 == 0){
+            console.log(`${checkEven} is an even number.`);
+        }else{
+            console.log(`${checkEven} is an odd number.`);
+        }
+
+        var num = 25;
+        // if else ladder
+        if(num % 2 == 0){
+            console.log(`${num} is a multiple of 2.`);
+        } else if(num % 3 == 0){
+            console.log(`${num} is a multiple of 3.`);
+        } else{
+            console.log(`${num} is not a multiple of both 2 & 3.`);
+        }
+
+        var isRaining = true, needUmbrella = true;
+        if(isRaining && needUmbrella){
+            console.log(`It is raining outside.Take umbrella.`);
+        }else if(!isRaining && needUmbrella){
+            console.log(`It is not raining outside.No need umbrella.`);
+        }else{
+            console.log(`It may rain, take umbrella.`);
+        }
+
+        // Nested If - else condition
+        var checkNumber = -8;
+        if(checkNumber > 0){
+            if(checkNumber % 2 ==0){
+                console.log(`${checkNumber} is a multiple of 2.`);
+            }else{
+                console.log(`${checkNumber} is not multiple of 2.`);
+            }
+        }else{
+            console.log(`${checkNumber} is a negative number.`);
+        }
+
+        var checkNumber = 12;
+        if(checkNumber % 2 == 0){
+            if(checkNumber % 3 == 0){
+                console.log(`${checkNumber} is both multiples of 2 & 3.`);
+            }else{
+                console.log(`${checkNumber} is a multiple of 2.`);
+            }
+        }else{
+            if(checkNumber % 3 == 0){
+                console.log(`${checkNumber} is a multiple of 3.`);
+            }else{
+                console.log(`${checkNumber} is not multiple of both 2 & 3.`);
+            }
+        }
+   
+        // Ternary Operator
+        // Syntax: (condition) ? true : false
+        (checkNumber % 2 == 0)
+                ? console.log(`${checkNumber} is a multiple of 2.`)
+                : console.log(`${checkNumber} is not multiple of 2.`);
+
+        (checkNumber % 2 == 0)
+            ? (checkNumber % 3 == 0)
+                ? console.log(`${checkNumber} is both multiple of 2 & 3.`)
+                : console.log(`${checkNumber} is a multiple of 2.`)
+            : (checkNumber % 3 == 0)
+                ? console.log(`${checkNumber} is multiple of 3.`)
+                : console.log(`${checkNumber} is not multiple of both 2 & 3.`);
+
+        var x = 10, y = 20, z = 30;
+        (x > y)
+            ? (x > y)
+                ? console.log(`${x} is greatest of other 2 numbers.`)
+                : console.log(`${z} is greatest of other 2 numbers.`)
+            : (y > z)
+                ? console.log(`${y} is greatest of other 2 numbers.`)
+                : console.log(`${z} is greatest of other 2 numbers.`)
+    </script>
+</body>
+</html>
